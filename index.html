@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a {color: hsl(228, 45%, 44%);}
+
+    body {
+      font-family: 'Hanken Grotesk', sans-serif;
+      background-color: white;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 110vh;
+      gap: 1px
+    }
+
+    .blue {
+      width: 170px;
+      background: linear-gradient(#6541FD, #4433F1);
+      height: 230px;
+      text-align: center;
+      padding: 20px;
+      color: #FFFFFD;
+      border-radius: 20px;
+    }
+    
+    .head {
+      font-size: small;
+      color: #CBC7FF;
+    }
+
+    .score {
+      background-color: #442DDF;
+      border-radius: 50%;
+      padding: 15px;
+      margin: 20px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .your-score {
+      font-weight: bold;
+      font-size: 40px;
+    }
+
+    .total {
+      font-size: 10px;
+      color: #8679FF;
+    }
+
+    .great {
+      font-weight: bolder;
+    }
+
+    .statement {
+      font-size: 10px;
+      color: #CBC7FF;
+    }
+
+    .white {
+      width: 170px;
+      background-color: #FFFFFF;
+      height: 230px;
+      padding: 20px;
+      color: black;
+      border-radius: 0 20px 20px 0;
+      /*box-shadow: 0 0 0 2px #EAF0FC, 0.3em 0.3em 1em #EAF0FC;*/
+    }
+
+    .sum-text {
+      text-align: left;
+      margin-bottom: 15px;
+      font-size: small;
+    }
+
+    .breakdown {
+      margin-bottom: 20px;
+    }
+
+    .icon {
+      padding-right: 5px;
+      height: 10px;
+    }
+
+    .reaction {
+      background-color: #FFF6F5;
+      border-radius: 5px;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    .r-color {
+      color: #E47B78;
+      font-size: 12px;
+    }
+
+    .number1 {
+      font-size: 12px;
+      padding-left: 40px;
+    }
+
+    .sum-total {
+      font-size: 12px;
+      color: #BCBBC3;
+    }
+    
+    .memory {
+      background-color: #FFFBF2;
+      border-radius: 5px;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    .m-color {
+      color: #EFB94F;
+      font-size: 12px;
+    }
+
+    .number2 {
+      font-size: 12px;
+      padding-left: 43px;
+    }
+
+    .verbal {
+      background-color: #F2FBFA;
+      border-radius: 5px;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    .v-color {
+      color: #2FAA8B;
+      font-size: 12px;
+    }
+
+    .number3 {
+      font-size: 12px;
+      padding-left: 54px;
+    }
+
+    .visual {
+      background-color: #F3F3FD;
+      border-radius: 5px;
+      padding: 5px;
+      margin-bottom: 15px;
+    }
+
+    .vi-color {
+      color: #404AC7;
+      font-size: 12px;
+    }
+
+    .number4 {
+      font-size: 12px;
+      padding-left: 57px;
+    }
+
+    .continue {
+      background-color: #303B59;
+      color: #F8F5FF;
+      text-align: center;
+      border-radius: 20px;
+      font-size: 12px;
+      padding: 10px;
+    }
+
+    .continue:hover {
+      background-color: #4F39F4;
+    }
+
+    @media (max-width: 1220px) {
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      .attribution {
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+      <div class="blue">
+        <span class="head">Your Result</span>
+        <div class="score">
+          <span class="your-score">76</span> <br><span class="total">of 100</span>
+        </div>
+        <span class="great">Great</span>
+        <p class="statement">You scored higher than 65% of <br> the people who have taken <br> these tests.</p>
+      </div>
+      <div class="white">
+        <div class="sum-text">
+          <span>Summary</span>
+        </div>
+        <div class="breakdown">
+          <div class="reaction">
+            <img class="icon" src="./assets/images/icon-reaction.svg" alt="reaction icon"><span class="r-color">Reaction</span>
+            <span class="number1">80</span><span class=" sum-total"> / 100</span>
+          </div>
+          <div class="memory">
+            <img class="icon" src="./assets/images/icon-memory.svg" alt="memory icon"><span class="m-color">Memory</span>
+            <span class="number2">92</span><span class=" sum-total"> / 100</span>
+          </div>
+          <div class="verbal">
+            <img class="icon" src="./assets/images/icon-verbal.svg" alt="verbal icon"><span class="v-color">Verbal</span>
+            <span class="number3">61</span><span class=" sum-total"> / 100</span>
+          </div>
+          <div class="visual">
+            <img class="icon" src="./assets/images/icon-visual.svg" alt="visual icon"><span class="vi-color">Visual</span>
+            <span class="number4">72</span><span class=" sum-total"> / 100</span>
+          </div>
+          <div class="continue">Continue</div>
+        </div>
+      </div> 
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://linktr.ee/kbthe2">David Korankye Boateng</a>.
+  </div>
+</body>
+</html>
