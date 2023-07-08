@@ -23,6 +23,11 @@ I decided to complete this challenge after completing Angela Yu's lesson on HTML
 ![](./design/Screenshot%202023-07-08%20at%2021-18-53%20Frontend%20Mentor%20Results%20summary%20component.png)
 ![](./design/Screenshot.png)
 
+### Links
+
+- Solution URL: (https://github.com/kbthe2/Results-summary-component)
+- Live Site URL: (https://kbthe2.github.io/Results-summary-component/)
+
 ## My process
 
 ### Built with
